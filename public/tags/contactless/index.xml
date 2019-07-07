@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>contactless on Alessio Basso</title>
+    <link>/tags/contactless/</link>
+    <description>Recent content in contactless on Alessio Basso</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Mon, 15 Feb 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/contactless/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Better Octopus Card</title>
+      <link>/posts/2016/01/better-octopus/</link>
+      <pubDate>Mon, 15 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2016/01/better-octopus/</guid>
+      <description>Octopus card is, by all standards, a success story. Introduced in 1997 by a consortium of railway and bus companies, for transit ticketing purposes, it subsequently expanded to other payment usages (restaurants, parking, convenience stores) following Hong Kong Monetary Authority granting Octopus&amp;rsquo; operating company a deposit-taking license.
+Pretty much everywhere you go in Hong Kong, you can pay with Octopus. It&amp;rsquo;s as close as one can get to a cashless society utopia.</description>
+    </item>
+    
+  </channel>
+</rss>

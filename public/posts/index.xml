@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Alessio Basso</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Alessio Basso</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Mon, 06 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Miminum Viable Architecture: The intersection between the Enterprise Architecture and Agile Development</title>
+      <link>/posts/2019/05/mva/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2019/05/mva/</guid>
+      <description>Context There were times (and till to date) when we build grand enterprise architectures with capabilities and alternatives for each: from business to technical to infrastructure viewpoints, followed by year long development cycles. While the adoption of agile (any flavor of agile) has changed the way we think about development and start delivering incremental value, the architecture itself has either been ignored (“agile don’t need upfront architecture!”), or continues to follow a waterfall development.</description>
+    </item>
+    
+    <item>
+      <title>My Very Own Azure Saturday</title>
+      <link>/posts/2017/07/my-very-own-azure-saturday/</link>
+      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2017/07/my-very-own-azure-saturday/</guid>
+      <description>Last week, Scott Guthrie was in London and gave a ‘private’ presentation about Azure to some teams in the company I work for…
+I could not be there in person, but I’m told the below video has pretty much the same content… so I watched it.
+couldn&amp;#39;t be in London yesterday, so watching @Azure demo by @scottgu today ..my own #AzureSaturday ;) https://t.co/XJBOgqrcKT #cloud #Azure
+&amp;mdash; Alessio Basso (@alxdwn) June 24, 2017</description>
+    </item>
+    
+    <item>
+      <title>Banking in the Age of Social Media</title>
+      <link>/posts/2017/05/banking-in-the-age-of-social-media/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2017/05/banking-in-the-age-of-social-media/</guid>
+      <description>I happened to be in Guangzhou last week, and attending an interesting round table discussion during a banking technology event.
+One of the guests was from WeBank, sharing his experience working in a technology company that happens to hold a banking license in China.
+He shared the fact that they started as a technology company even before they had the license, developing a banking platform that is now used by 8 local banks in China in a BaaS (Banking as a Service) model.</description>
+    </item>
+    
+    <item>
+      <title>Let&#39;s chat about WeChat… one year later</title>
+      <link>/posts/2016/12/wechat-oneyearlater/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2016/12/wechat-oneyearlater/</guid>
+      <description>Almost a year ago I started working with WeChat… I prepared a small intro, but did not share it widely back then.
+This evening I presented it - updated- to the Hong Kong codeaholics meetup.
+Enjoy!
+ When we talk about &amp;ldquo;WeChat&amp;rdquo; (or &amp;ldquo;WeiXin&amp;rdquo;, 微信), most think of one of many smartphone apps used to chat. And this is true - as the app&amp;rsquo;s main window contains a list of your friends&amp;rsquo; contacts (slide 3).</description>
+    </item>
+    
+    <item>
+      <title>Neat</title>
+      <link>/posts/2016/12/neat/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/posts/2016/12/neat/</guid>
+      <description>I had a chance to participate to the first ever beta launch event for a new bank app, last week in Hong Kong. Pretty much like for the other challenger banks out there, there were drinks, pizza, the founders and team there to answer questions and help explore the app, and lots of interesting people willing to talk and share their idea of how a bank should look like.
+I don&amp;rsquo;t want to write another dull &amp;ldquo;unboxing&amp;rdquo; post explaining every single step/screen I went through, so here are the screenshots.</description>
+    </item>
+    
+    <item>
+      <title>A Better Octopus Card</title>
+      <link>/posts/2016/01/better-octopus/</link>
+      <pubDate>Mon, 15 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2016/01/better-octopus/</guid>
+      <description>Octopus card is, by all standards, a success story. Introduced in 1997 by a consortium of railway and bus companies, for transit ticketing purposes, it subsequently expanded to other payment usages (restaurants, parking, convenience stores) following Hong Kong Monetary Authority granting Octopus&amp;rsquo; operating company a deposit-taking license.
+Pretty much everywhere you go in Hong Kong, you can pay with Octopus. It&amp;rsquo;s as close as one can get to a cashless society utopia.</description>
+    </item>
+    
+    <item>
+      <title>Debunking WeChat</title>
+      <link>/posts/2015/12/debunking-wechat/</link>
+      <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2015/12/debunking-wechat/</guid>
+      <description>A no-frills description of what WeChat really is.
+  I’ve been reading for a while articles about WeChat, a Chinese “mobile instant messaging cum social media” very popular in Mainland China (and not only).
+Most of them are a mix and match of:
+ screenshots of features provided by either Tencent, Tencent’s partners, or brands’ 3rd party developers, delivered as part of the app, wallet, or embedded web browser description of how WeChat is a “platform” capable of delivering any service imaginable (add again lots of use cases, some really existing some not) usually, an ending highlighting how this is the future of apps and how all western apps should follow Tencent’s footsteps  But really, what is WeChat?</description>
+    </item>
+    
+    <item>
+      <title>Cathay Pacific, mobile app</title>
+      <link>/posts/2014/12/cxapp/</link>
+      <pubDate>Thu, 11 Dec 2014 12:45:00 +0000</pubDate>
+      
+      <guid>/posts/2014/12/cxapp/</guid>
+      <description>Few days ago, Cathay Pacific released its new mobile app.
+I downloaded the android version, and gave it a try. TL;DR? It&amp;rsquo;s better than it used to be, looks more modern, but there are a number of bugs still open, and questionable design chooices have been made. Here are a few comments.
+ Two different loading spinners: why?
+  Page transitions (see below an example of the language selection) are ok, but the &amp;ldquo;back&amp;rdquo; button should animate from left to right, not right to left.</description>
+    </item>
+    
+    <item>
+      <title>Coin card, one year later</title>
+      <link>/posts/2014/08/onlycoin/</link>
+      <pubDate>Sun, 24 Aug 2014 14:40:00 +0000</pubDate>
+      
+      <guid>/posts/2014/08/onlycoin/</guid>
+      <description>One year after my first (and - so far - only) blog post about Coin, the company seems to be in trouble: backers are (rightfully) concerned about the product launch postponed for six months, and commentators ask what are the future plans for the product after its target market - the US - adopt EMV chip cards.
+ It seems most of the backers are concerned about the future in regards to the rollout of chip cards in the US, but the FAQ on coin website don&amp;rsquo;t do much to address the concern, insisting it will work during US&amp;rsquo; EMV transition period and if it has a magnetic stripe.</description>
+    </item>
+    
+    <item>
+      <title>Credit cards and electronic wallet</title>
+      <link>/posts/ccwallet/</link>
+      <pubDate>Sun, 01 Dec 2013 03:55:45 +0000</pubDate>
+      
+      <guid>/posts/ccwallet/</guid>
+      <description>I was watching this video the other day, and wondering about the convenience of the thing. Ideally, yes, it would be nice to have one card to rule them all, and say adios forever to fat wallets full of plastic.
+My first though after the foreseeable reaction to the video (that was, &amp;ldquo;COOL!&amp;rdquo;) was if this whole scheme is possible. As:
+ the device shown in the video have only a magstripe; most cards nowadays use the chip in many jurisdictions, the rule is still &amp;ldquo;the merchant is not permitted to accept a credit card in the absence of the cardholder and without presentation of the credit card&amp;ldquo;; and this device - at the end - is a copy of a physical card.</description>
+    </item>
+    
+    <item>
+      <title>Welcome 852 tech</title>
+      <link>/posts/about/</link>
+      <pubDate>Thu, 17 Oct 2013 03:52:07 +0000</pubDate>
+      
+      <guid>/posts/about/</guid>
+      <description>This is a tentative of a blog; I have no idea what when and how frequently I&amp;rsquo;ll update this space, but want to give it a try.
+Need to learn Jekyll first, so everything is postponed to the next time I&amp;rsquo;ll have a sufficiently long flight or a sufficiently boring layover.
+I am @alexdown on GitHub, @alxdwn on twitter.</description>
+    </item>
+    
+  </channel>
+</rss>

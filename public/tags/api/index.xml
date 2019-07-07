@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>API on Alessio Basso</title>
+    <link>/tags/api/</link>
+    <description>Recent content in API on Alessio Basso</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Wed, 14 Dec 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Let&#39;s chat about WeChat… one year later</title>
+      <link>/posts/2016/12/wechat-oneyearlater/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2016/12/wechat-oneyearlater/</guid>
+      <description>Almost a year ago I started working with WeChat… I prepared a small intro, but did not share it widely back then.
+This evening I presented it - updated- to the Hong Kong codeaholics meetup.
+Enjoy!
+ When we talk about &amp;ldquo;WeChat&amp;rdquo; (or &amp;ldquo;WeiXin&amp;rdquo;, 微信), most think of one of many smartphone apps used to chat. And this is true - as the app&amp;rsquo;s main window contains a list of your friends&amp;rsquo; contacts (slide 3).</description>
+    </item>
+    
+    <item>
+      <title>A Better Octopus Card</title>
+      <link>/posts/2016/01/better-octopus/</link>
+      <pubDate>Mon, 15 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2016/01/better-octopus/</guid>
+      <description>Octopus card is, by all standards, a success story. Introduced in 1997 by a consortium of railway and bus companies, for transit ticketing purposes, it subsequently expanded to other payment usages (restaurants, parking, convenience stores) following Hong Kong Monetary Authority granting Octopus&amp;rsquo; operating company a deposit-taking license.
+Pretty much everywhere you go in Hong Kong, you can pay with Octopus. It&amp;rsquo;s as close as one can get to a cashless society utopia.</description>
+    </item>
+    
+    <item>
+      <title>Debunking WeChat</title>
+      <link>/posts/2015/12/debunking-wechat/</link>
+      <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2015/12/debunking-wechat/</guid>
+      <description>A no-frills description of what WeChat really is.
+  I’ve been reading for a while articles about WeChat, a Chinese “mobile instant messaging cum social media” very popular in Mainland China (and not only).
+Most of them are a mix and match of:
+ screenshots of features provided by either Tencent, Tencent’s partners, or brands’ 3rd party developers, delivered as part of the app, wallet, or embedded web browser description of how WeChat is a “platform” capable of delivering any service imaginable (add again lots of use cases, some really existing some not) usually, an ending highlighting how this is the future of apps and how all western apps should follow Tencent’s footsteps  But really, what is WeChat?</description>
+    </item>
+    
+  </channel>
+</rss>

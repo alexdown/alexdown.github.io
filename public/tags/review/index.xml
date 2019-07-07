@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>review on Alessio Basso</title>
+    <link>/tags/review/</link>
+    <description>Recent content in review on Alessio Basso</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Wed, 14 Dec 2016 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Neat</title>
+      <link>/posts/2016/12/neat/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/posts/2016/12/neat/</guid>
+      <description>I had a chance to participate to the first ever beta launch event for a new bank app, last week in Hong Kong. Pretty much like for the other challenger banks out there, there were drinks, pizza, the founders and team there to answer questions and help explore the app, and lots of interesting people willing to talk and share their idea of how a bank should look like.
+I don&amp;rsquo;t want to write another dull &amp;ldquo;unboxing&amp;rdquo; post explaining every single step/screen I went through, so here are the screenshots.</description>
+    </item>
+    
+    <item>
+      <title>Cathay Pacific, mobile app</title>
+      <link>/posts/2014/12/cxapp/</link>
+      <pubDate>Thu, 11 Dec 2014 12:45:00 +0000</pubDate>
+      
+      <guid>/posts/2014/12/cxapp/</guid>
+      <description>Few days ago, Cathay Pacific released its new mobile app.
+I downloaded the android version, and gave it a try. TL;DR? It&amp;rsquo;s better than it used to be, looks more modern, but there are a number of bugs still open, and questionable design chooices have been made. Here are a few comments.
+ Two different loading spinners: why?
+  Page transitions (see below an example of the language selection) are ok, but the &amp;ldquo;back&amp;rdquo; button should animate from left to right, not right to left.</description>
+    </item>
+    
+    <item>
+      <title>Coin card, one year later</title>
+      <link>/posts/2014/08/onlycoin/</link>
+      <pubDate>Sun, 24 Aug 2014 14:40:00 +0000</pubDate>
+      
+      <guid>/posts/2014/08/onlycoin/</guid>
+      <description>One year after my first (and - so far - only) blog post about Coin, the company seems to be in trouble: backers are (rightfully) concerned about the product launch postponed for six months, and commentators ask what are the future plans for the product after its target market - the US - adopt EMV chip cards.
+ It seems most of the backers are concerned about the future in regards to the rollout of chip cards in the US, but the FAQ on coin website don&amp;rsquo;t do much to address the concern, insisting it will work during US&amp;rsquo; EMV transition period and if it has a magnetic stripe.</description>
+    </item>
+    
+  </channel>
+</rss>

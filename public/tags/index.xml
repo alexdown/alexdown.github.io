@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Alessio Basso</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Alessio Basso</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Mon, 06 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>agile</title>
+      <link>/tags/agile/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>architecture</title>
+      <link>/tags/architecture/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>evolutionary</title>
+      <link>/tags/evolutionary/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/evolutionary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mva</title>
+      <link>/tags/mva/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mva/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mvp</title>
+      <link>/tags/mvp/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mvp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bio</title>
+      <link>/tags/bio/</link>
+      <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>me</title>
+      <link>/tags/me/</link>
+      <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/me/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>profile</title>
+      <link>/tags/profile/</link>
+      <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/profile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>speaker</title>
+      <link>/tags/speaker/</link>
+      <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/speaker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>speaking</title>
+      <link>/tags/speaking/</link>
+      <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/speaking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure</title>
+      <link>/tags/azure/</link>
+      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud</title>
+      <link>/tags/cloud/</link>
+      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft</title>
+      <link>/tags/microsoft/</link>
+      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>China</title>
+      <link>/tags/china/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/china/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Digital Banking</title>
+      <link>/tags/digital-banking/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/digital-banking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tencent</title>
+      <link>/tags/tencent/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tencent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fintech</title>
+      <link>/tags/fintech/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fintech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mobile</title>
+      <link>/tags/mobile/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API</title>
+      <link>/tags/api/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WeChat</title>
+      <link>/tags/wechat/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/wechat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>platform</title>
+      <link>/tags/platform/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/platform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mobile Banking</title>
+      <link>/tags/mobile-banking/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/tags/mobile-banking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Startup</title>
+      <link>/tags/startup/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/tags/startup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UI</title>
+      <link>/tags/ui/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/tags/ui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>review</title>
+      <link>/tags/review/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>contactless</title>
+      <link>/tags/contactless/</link>
+      <pubDate>Mon, 15 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/contactless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>payments</title>
+      <link>/tags/payments/</link>
+      <pubDate>Mon, 15 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/payments/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mobile on Alessio Basso</title>
+    <link>/tags/mobile/</link>
+    <description>Recent content in mobile on Alessio Basso</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Sun, 28 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Banking in the Age of Social Media</title>
+      <link>/posts/2017/05/banking-in-the-age-of-social-media/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2017/05/banking-in-the-age-of-social-media/</guid>
+      <description>I happened to be in Guangzhou last week, and attending an interesting round table discussion during a banking technology event.
+One of the guests was from WeBank, sharing his experience working in a technology company that happens to hold a banking license in China.
+He shared the fact that they started as a technology company even before they had the license, developing a banking platform that is now used by 8 local banks in China in a BaaS (Banking as a Service) model.</description>
+    </item>
+    
+    <item>
+      <title>Cathay Pacific, mobile app</title>
+      <link>/posts/2014/12/cxapp/</link>
+      <pubDate>Thu, 11 Dec 2014 12:45:00 +0000</pubDate>
+      
+      <guid>/posts/2014/12/cxapp/</guid>
+      <description>Few days ago, Cathay Pacific released its new mobile app.
+I downloaded the android version, and gave it a try. TL;DR? It&amp;rsquo;s better than it used to be, looks more modern, but there are a number of bugs still open, and questionable design chooices have been made. Here are a few comments.
+ Two different loading spinners: why?
+  Page transitions (see below an example of the language selection) are ok, but the &amp;ldquo;back&amp;rdquo; button should animate from left to right, not right to left.</description>
+    </item>
+    
+  </channel>
+</rss>

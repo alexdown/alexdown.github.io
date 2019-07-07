@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Startup on Alessio Basso</title>
+    <link>/tags/startup/</link>
+    <description>Recent content in Startup on Alessio Basso</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Wed, 14 Dec 2016 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/startup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Neat</title>
+      <link>/posts/2016/12/neat/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/posts/2016/12/neat/</guid>
+      <description>I had a chance to participate to the first ever beta launch event for a new bank app, last week in Hong Kong. Pretty much like for the other challenger banks out there, there were drinks, pizza, the founders and team there to answer questions and help explore the app, and lots of interesting people willing to talk and share their idea of how a bank should look like.
+I don&amp;rsquo;t want to write another dull &amp;ldquo;unboxing&amp;rdquo; post explaining every single step/screen I went through, so here are the screenshots.</description>
+    </item>
+    
+  </channel>
+</rss>
