@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Alessio Basso</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Mon, 06 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>agile</title>
       <link>/tags/agile/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/agile/</guid>
       <description></description>
@@ -23,9 +23,27 @@
     <item>
       <title>architecture</title>
       <link>/tags/architecture/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>competence</title>
+      <link>/tags/competence/</link>
+      <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/competence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>teams</title>
+      <link>/tags/teams/</link>
+      <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/teams/</guid>
       <description></description>
     </item>
     

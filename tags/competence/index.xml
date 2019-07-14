@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>agile on Alessio Basso</title>
-    <link>/tags/agile/</link>
-    <description>Recent content in agile on Alessio Basso</description>
+    <title>competence on Alessio Basso</title>
+    <link>/tags/competence/</link>
+    <description>Recent content in competence on Alessio Basso</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Sun, 14 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/competence/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <description>I thought I&amp;rsquo;d share about a book I am reading now&amp;hellip; which I found memorable mainly for the type of teamwork and leadership it&amp;rsquo;s describing.
  GBS_insertEmbeddedViewer(&#39;ISBN:0743214471&#39;,300,480);   What about it?
 It&amp;rsquo;s describing work practices from the Gemini and Apollo mission control teams. Now: those were the people who worked - together with the astronauts - on all aspects of the space missions. They were involved in definition of objectives, feasibility, planning, to the design of every single aspect of the flights.</description>
-    </item>
-    
-    <item>
-      <title>Miminum Viable Architecture: The intersection between the Enterprise Architecture and Agile Development</title>
-      <link>/posts/2019/05/mva/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/2019/05/mva/</guid>
-      <description>Context There were times (and till to date) when we build grand enterprise architectures with capabilities and alternatives for each: from business to technical to infrastructure viewpoints, followed by year long development cycles. While the adoption of agile (any flavor of agile) has changed the way we think about development and start delivering incremental value, the architecture itself has either been ignored (“agile don’t need upfront architecture!”), or continues to follow a waterfall development.</description>
     </item>
     
   </channel>
