@@ -3,20 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2019/</loc>
+    <lastmod>2019-07-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2019-07-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/posts/2019/07/kranz/</loc>
+    <loc>/2019/07/kranz/</loc>
     <lastmod>2019-07-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2019-07-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -50,7 +50,7 @@
   </url>
   
   <url>
-    <loc>/posts/2019/05/mva/</loc>
+    <loc>/2019/05/mva/</loc>
     <lastmod>2019-05-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -113,6 +113,12 @@
   </url>
   
   <url>
+    <loc>/2017/</loc>
+    <lastmod>2017-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/azure/</loc>
     <lastmod>2017-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -131,12 +137,12 @@
   </url>
   
   <url>
-    <loc>/posts/2017/07/my-very-own-azure-saturday/</loc>
+    <loc>/2017/07/my-very-own-azure-saturday/</loc>
     <lastmod>2017-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/2017/05/banking-in-the-age-of-social-media/</loc>
+    <loc>/2017/05/banking-in-the-age-of-social-media/</loc>
     <lastmod>2017-05-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -171,13 +177,19 @@
   </url>
   
   <url>
+    <loc>/2016/</loc>
+    <lastmod>2016-12-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/api/</loc>
     <lastmod>2016-12-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/posts/2016/12/wechat-oneyearlater/</loc>
+    <loc>/2016/12/wechat-oneyearlater/</loc>
     <lastmod>2016-12-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -200,7 +212,7 @@
   </url>
   
   <url>
-    <loc>/posts/2016/12/neat/</loc>
+    <loc>/2016/12/neat/</loc>
     <lastmod>2016-12-14T00:00:00+01:00</lastmod>
   </url>
   
@@ -223,7 +235,7 @@
   </url>
   
   <url>
-    <loc>/posts/2016/01/better-octopus/</loc>
+    <loc>/2016/01/better-octopus/</loc>
     <lastmod>2016-02-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -240,27 +252,39 @@
   </url>
   
   <url>
-    <loc>/posts/2015/12/debunking-wechat/</loc>
+    <loc>/2015/</loc>
+    <lastmod>2015-12-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2015/12/debunking-wechat/</loc>
     <lastmod>2015-12-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/2014/12/cxapp/</loc>
+    <loc>/2014/</loc>
+    <lastmod>2014-12-11T12:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2014/12/cxapp/</loc>
     <lastmod>2014-12-11T12:45:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/2014/08/onlycoin/</loc>
+    <loc>/2014/08/onlycoin/</loc>
     <lastmod>2014-08-24T14:40:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/ccwallet/</loc>
+    <loc>/ccwallet/</loc>
     <lastmod>2013-12-01T03:55:45+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2013-10-17T03:52:07+00:00</lastmod>
   </url>
   

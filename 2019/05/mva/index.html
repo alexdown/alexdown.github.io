@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Miminum Viable Architecture: The intersection between the Enterprise Architecture and Agile Development // Alessio Basso
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.55.6" />
+
+  <meta property="og:title" content="Miminum Viable Architecture: The intersection between the Enterprise Architecture and Agile Development" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="/2019/05/mva/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="/css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Alessio Basso" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', "UA-72520783-1", 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="https://pbs.twimg.com/profile_images/1044507950277025797/CWYAv1sd_bigger.jpg" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">852 tech</h1>
+    <h2 class="brand-tagline">Random ramblings about technology, fintech, mobile... anything that doesn&#39;t fit twitter&#39;s 140 characters.</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/profile">me</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/speaking">speaking</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/tags">tags</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="https://github.com/alexdown" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="https://hk.linkedin.com/in/alessiobasso" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="/index.xml" target="_blank"><i class='fa fa-rss'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/alxdwn" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#context">Context</a></li>
+<li><a href="#step-1-define-architecture-principles-and-decide-on-the-topology">Step 1: Define Architecture Principles and Decide on the Topology</a></li>
+<li><a href="#step-2-choose-the-platform-technology">Step 2: Choose the Platform/Technology</a>
+<ul>
+<li><a href="#step-2-1-build-vs-buy">Step 2.1: Build vs. Buy</a></li>
+<li><a href="#step-2-2-reusing-a-generic-open-source-framework">Step 2.2: Reusing a generic (open source) framework</a></li>
+</ul></li>
+<li><a href="#step-3-map-the-core-business-capability-to-technical-tooling">Step 3: Map the core Business Capability to Technical tooling</a>
+<ul>
+<li><a href="#step-3-1-architecture-decision-registry">Step 3.1: Architecture Decision Registry</a></li>
+<li><a href="#step-3-2-technical-debt">Step 3.2: Technical Debt</a></li>
+</ul></li>
+<li><a href="#step-4-architect-design-and-prototype-the-details">Step 4: Architect, Design and Prototype the details</a></li>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#about-the-authors">About the authors</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/2019/05/mva/">Miminum Viable Architecture: The intersection between the Enterprise Architecture and Agile Development</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>6</sup></span><span class="post-date-separator">/</span><span class="post-date-month">May</span> <span class="post-date-year">2019</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            
+
+<h2 id="context">Context</h2>
+
+<p>There were times (and till to date) when we build grand enterprise architectures with capabilities and alternatives for each: from business to technical to infrastructure viewpoints, followed by year long development cycles. While the adoption of agile (any flavor of agile) has changed the way we think about development and start delivering incremental value, the architecture itself has either been ignored (“agile don’t need upfront architecture!”), or continues to follow a waterfall development.</p>
+
+<p>This led, respectively, to two major issues: (1) Without a sound architecture, any later deviation/extension/change is very hard to accommodate, often resulting in redesigning the entire system. (2) The other extreme by architecting upfront, is that architecture becomes irrelevant as the sprints progress.</p>
+
+<p>The role of the architect is then to develop minimal architecture upfront, and refine it as the sprints progress. Through our implementation experience, we learned how to work on the assumption of ‘Minimal Viable Architecture’, which is what we explain below.</p>
+
+<h2 id="step-1-define-architecture-principles-and-decide-on-the-topology">Step 1: Define Architecture Principles and Decide on the Topology</h2>
+
+<p><em>(Do it in sprint:0 and it rarely needs to be revised as its abstracted to a great level)</em></p>
+
+<p>Architecture principles to technology is what vision means to the product/firm. Though architects may not call this out quite often, internally they refer to this every time an architecture/design decision needs to be taken. This could be like ‘Microservices are independent and stateless’, ‘Defining standards for all data (msg, events, API) payloads’, ‘Data Quality validated at the source’, etc.</p>
+
+<p>Post defining the principles, start with the topology of the system based on the grand vision and mission of the product/application to be built. This will take into account all core internal components, as well as all external systems/endpoints to interface with.</p>
+
+<blockquote>
+<p><em>Architecture principles to technology is what vision means to the product/firm. [&hellip;] Post defining the principles, start with the topology of the system based on the grand vision and mission of the product/application to be built.</em></p>
+</blockquote>
+
+<p>Upon building the topology, finalize this ‘conceptual’ architecture by:</p>
+
+<ul>
+<li>Explicitly listing all core components needed for the system to function.</li>
+<li>At this level, it could be a list of microservice(s), application database instance(s), external API(s) to connect to perform a business function (e.g. payment service), an analytical platform to collect and store data from all data sources, etc.</li>
+<li>Explicitly listing all interactions between those components, the interaction type (e.g. sync API call vs. async msg queue-mediated), and their purpose.</li>
+</ul>
+
+<h2 id="step-2-choose-the-platform-technology">Step 2: Choose the Platform/Technology</h2>
+
+<p><em>(Do it in sprint zero, and you better pray this never changes as the implications are huge)</em></p>
+
+<p>Unless you are starting an evergreen project, the platform is more or less chosen for you by the technology office or by history. This could be on-premise with a particular stack, or one of the cloud providers. If on-premise, the key decision is to chose the backend programing language and framework, front-end framework, database, message broker, analytics/data science frameworks. This may come as a part of one or more pre-packaged software or we will have to integrate some of them to solve the business problem. If the decision is to go with cloud, then the major question to answer is to go cloud native or cloud agnostic. Cloud Native offerings are getting mature and rival some of the well established software. Even if we want to stay cloud agnostic, major softwares are available as the marketplace offerings from the cloud vendors, making the installation and provisioning a seamless job.</p>
+
+<blockquote>
+<p><em>Be it starting fresh or aligning with the platform/technology chosen by the technology office, you need to take into account the product/application growth, long term cost implication for on-premise vs. cloud, support from the respective infrastructure/software/cloud vendor, expansion into other regions, needs for cross-regional DR and most importantly security compliance of the platform.</em></p>
+</blockquote>
+
+<p>It is very important to take into consideration not only if a tech stack is fit-for-purpose for a particular application… most are, one way or another. Other important elements to consider are: support for the cloud provider of your choice (e.g. not all languages have first-class support for serverless execution on major cloud providers), availability of expertise in your company or in your geography, etc.</p>
+
+<h3 id="step-2-1-build-vs-buy">Step 2.1: Build vs. Buy</h3>
+
+<p>(Some) Architects were once engineers, who are passionate to build stuff. While the question of Buy vs. Build has been asked for decades, with the availability of many niche software products in the market and the PaaS/SaaS offerings from Cloud, it’s more important than ever to ask this question, not just before procuring a COTS product, but before starting to build ANY service. When in cloud, it’s alway better to pick Pass/SaaS offering (subject to Architecture Principles about cloud agnostic development, multi-cloud data management, hybrid-cloud etc.) When encountering a very niche problem, it’s almost always better to go down a product route (needs a lot of research though!) instead of burning a lot of effort on building a solution from the ground up. Unless the niche problem is your “secret sauce”, something only your company solves, in which case you’re probably already providing it as a PaaS/SaaS software offering.</p>
+
+<blockquote>
+<p><em>While the question of Buy vs. Build has been asked for decades, with the availability of many niche software products in the market and the PaaS/SaaS offerings from Cloud, it’s more important than ever to ask this question not just before procuring a COTS product, but before starting to build any service.</em></p>
+</blockquote>
+
+<p>e.g.: Say, you need a facebook-like, twitter-like feeds platform. While we can technically build it from the ground up, the well-defined nature of the problem makes often better to adopt an existing solution, from the point of view of cost, time to market, performance and scaling, etc.</p>
+
+<h3 id="step-2-2-reusing-a-generic-open-source-framework">Step 2.2: Reusing a generic (open source) framework</h3>
+
+<p>For almost every generic use case (Message Broker, Workflow, Data Transformation, User Behavior Tracking, Data Governance, &hellip;) there is likely more than one implementation available as Open Source. While there are enormous differences in adoption, maturity, enterprise support, and status within the community (e.g. independent vs backed by Apache Foundation for instance vs. backed by a commercial company), they are sound in terms of their capability, security and scaling. It is a tempting option for architects to pick them given the saving in development effort they could bring. Before taking any such decisions, beware of the following aspects:</p>
+
+<ul>
+<li>Fitment to the actual Use Case - do not bend over backwards to align the business use case with the framework. You adopt the package to accelerate your development, so make sure it is so.</li>
+<li>Effort to make it work for you - the framework might have been developed in java and run on JVM, and say the rest of our stack is in .NET. Making it work seamlessly could be a costly exercise and beware of the effort.</li>
+<li>Security - ensure this fits your security standards re: authentication, encryption, key management. If not, account for the effort to retrofit it.</li>
+<li>Firm’s Approval - see what is the protocol to integrate such framework into the firm: source code scanning, license review, etc..</li>
+<li>Stability - see is the framework is used elsewhere and go over the reviews, see if there is a community or corporate actively improving it, &hellip;</li>
+<li>How much to use/change - sometime the framework is very generic and designed to cover a very broad set of use cases. You may either have to pick and choose which modules to adopt, or modify the source to trim it down to what you need. If trimmed, ensure that your changes do not prevent you from incorporating future updates.</li>
+</ul>
+
+<blockquote>
+<p><em>For almost every generic use case (Message Broker, Workflow, Data Transformation, User Behavior Tracking, Data Governance) there are partially if not fully developed open source packages available.</em></p>
+</blockquote>
+
+<p>After answering all these questions, take a holistic decision on leveraging the framework vs. building a new framework to fit your needs. It is important to <em>track and record</em> your decision (usually in the <strong>Architecture Decision Registry, ADR</strong>).</p>
+
+<h2 id="step-3-map-the-core-business-capability-to-technical-tooling">Step 3: Map the core Business Capability to Technical tooling</h2>
+
+<p>_(Do it every time when there is a change to the Business Capabilities) _</p>
+
+<p>With the business roadmap, topology and platform/technology; map the high level business capability to the underlying technical components. This is the first step where we start taking tooling decision which is integral to the overall software development. You are bound by the architecture principles and the technology decisions taken above. At this stage, the Topology will further be distilled to list the underlying logical and then the respective technical components.</p>
+
+<blockquote>
+<p><em>Tooling decisions are bound by the architecture principles and the technology decisions taken above.</em></p>
+</blockquote>
+
+<h3 id="step-3-1-architecture-decision-registry">Step 3.1: Architecture Decision Registry</h3>
+
+<p>The ADR is a very simple and effective tool to ensure governance (in the good meaning of the word!), which essentially is down to:</p>
+
+<ul>
+<li>Concisely write down the context/assumptions</li>
+<li>Concisely write down the decision (and people agreeing on it)</li>
+<li>Concisely write down the reason supporting the decision</li>
+<li>Concisely write down the reason against the decision (if any)</li>
+<li>If applicable, set a condition (a time, or a future event e.g. the change of one of the assumptions) to <em>revise</em> the Architecture Decision</li>
+<li>Possibly, link to a PoC you have done validating the key assumption/problem it is supposed to solve</li>
+</ul>
+
+<blockquote>
+<p><em>It is important to <strong>track and record</strong> your decision (usually in the Architecture Decision Registry, ADR). The ADR is a very simple and effective tool to ensure governance.</em></p>
+</blockquote>
+
+<h3 id="step-3-2-technical-debt">Step 3.2: Technical Debt</h3>
+
+<p>In real life it is not unusual to deviate from the architecture principles we set up onto ourselves. This may be due to various reasons, but it is usually a tradeoff between any of the principles and time to delivery. Or sometimes, we don’t see an immediate need for a functionality, and we design and implement a system that turns out not to be as flexible/extendable as we thought, when a new requirement comes along. What’s important is how elegantly your architecture captures it, account for it, and how you go about remediating it.</p>
+
+<blockquote>
+<p><em>What is important in managing technical debt is how elegantly your architecture capture the deviation from the architecture/design principles and plan to remediate it.</em></p>
+</blockquote>
+
+<p>One way to institutionalize this is by having a ‘Technical Debt’ list. Record any deviation in from the architecture principles or technology <strong>as a tech debt item in your backlog</strong>, mention the reason for the deviation, and the effort needed to remediate it. To ensure that this isn’t becoming an ever growing list, agree with the product owners to scope in x% of the overall effort (in a sprint, or whatever is your execution period/cadence) to take items from this list and close/fix it.</p>
+
+<h2 id="step-4-architect-design-and-prototype-the-details">Step 4: Architect, Design and Prototype the details</h2>
+
+<p><em>(One or two sprint ahead for actual development)</em></p>
+
+<p>The above steps will set a strong direction to the overall technical evolution of the product/application, as well as tools and processes (e.g. the ADR, Tech Debt, &hellip;) to ensure the product technology evolves properly. This Step 4 is a critical step, as this is when the ‘rubber hits the road’: your architecture will actually be built and realized in the coming sprints. This is also the step which deviates from a typical enterprise architecture build. As a part of multi-sprint planning, the Product Owners will have a high level overview on what will be done in upcoming sprints (call it “PI planning”, “roadmap”, “backlog”, …). As architects, it’s our role to take those requirements and see if we have the ‘Necessary Architecture’(i.e. view of all components that need to be built, technical designs in place, technical assumptions validated, etc&hellip;) in place. If not build one in the prior sprints.</p>
+
+<blockquote>
+<p><em>This is critical step as this is when the ‘rubber meets the road’. This is when the architecture will be actually built and realized in following sprints.</em></p>
+</blockquote>
+
+<p>At this stage more than ever, it’s important to stay grounded. Grounded to the business value that need to be delivered and to the pre-established architecture principles. You will work on a sprint cadence, like everyone else in the team (engineers, designers, etc, ..). While it’s important to document, don’t burn too much of your time and effort is building countless artifacts to describe ample architecture viewpoints. Have the minimal/required artifacts - build the Minimal Viable Architecture. And go on to build a small working prototype to validate key aspects of your design: security, scalability, DR, etc.. Write automated tests for this, so that adherence to the principle (and fulfilment of the NFR) can be continuously validated. This will ensure that they aren’t any deviation later on during the implementation phase, and it boosts the confidence of the overall software delivery and product delivery.</p>
+
+<blockquote>
+<p><em>For the architecture build, stay grounded. Grounded to the actual business ask and the pre-established architecture principles.</em></p>
+</blockquote>
+
+<h2 id="summary">Summary</h2>
+
+<p>With all said, being a passionate technologist ourselves, it&rsquo;s critical for us to learn once again that its extremely important for us as an Architect to “Build Technology for Business, not Technology for sake of building Technology”. This can only be possible if Technology works very closely with Business; which is easy said than done as they speak different language. And we as Architects has to play that role and be a glue between business and technology folks. Finally, be an architect at mind (think broad) and be an engineer at heart (be meticulous to details while designing/executing); stay relevant and close to the developers.</p>
+
+<h2 id="about-the-authors">About the authors</h2>
+
+<p><strong><a href="https://www.linkedin.com/in/alessiobasso">Alessio Basso</a>:</strong> Alessio is a Solution Architect working for a small startup within a big corporation, where he use technology to deliver products that are scalable and evolvable. His specialties are simplifying and optimizing complex information systems. He is based out of Hong Kong.</p>
+
+<p><strong><a href="http://www.linkedin.com/in/baranitharan-v">Baranitharan Venkatakrishnan</a></strong>: Barney is Enterprise Architect working with multiple clients in transforming and realizing their business capabilities to products, platforms and solutions. At heart he is a Data Engineer evolved into an Architect specialized in Data &amp; Cloud. Barney is based out of US and he support clients around the world.</p>
+
+<hr />
+
+<p>This post have been reposted on LinkedIn: <a href="https://www.linkedin.com/pulse/minimal-viable-architecture-intersection-between-enterprise-basso/">https://www.linkedin.com/pulse/minimal-viable-architecture-intersection-between-enterprise-basso/</a></p>
+
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-architecture" href="/tags/architecture">architecture</a>,
+	                
+	                <a class="post-tag post-tag-agile" href="/tags/agile">agile</a>,
+	                
+	                <a class="post-tag post-tag-mva" href="/tags/mva">mva</a>,
+	                
+	                <a class="post-tag post-tag-mvp" href="/tags/mvp">mvp</a>,
+	                
+	                <a class="post-tag post-tag-evolutionary" href="/tags/evolutionary">evolutionary</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/speaking/">Speaking</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/2019/07/kranz/">Book review: Failure is not an option (Gene Kranz)</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alexdown" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2019. All rights reserved.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

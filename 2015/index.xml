@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2015s on Alessio Basso</title>
+    <link>/2015/</link>
+    <description>Recent content in 2015s on Alessio Basso</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Tue, 08 Dec 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/2015/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debunking WeChat</title>
+      <link>/2015/12/debunking-wechat/</link>
+      <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/12/debunking-wechat/</guid>
+      <description>A no-frills description of what WeChat really is.
+  I’ve been reading for a while articles about WeChat, a Chinese “mobile instant messaging cum social media” very popular in Mainland China (and not only).
+Most of them are a mix and match of:
+ screenshots of features provided by either Tencent, Tencent’s partners, or brands’ 3rd party developers, delivered as part of the app, wallet, or embedded web browser description of how WeChat is a “platform” capable of delivering any service imaginable (add again lots of use cases, some really existing some not) usually, an ending highlighting how this is the future of apps and how all western apps should follow Tencent’s footsteps  But really, what is WeChat?</description>
+    </item>
+    
+  </channel>
+</rss>
