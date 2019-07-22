@@ -6,10 +6,64 @@
     <description>Recent content in Tags on Alessio Basso</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Azure</title>
+      <link>/tags/azure/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud</title>
+      <link>/tags/cloud/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>architecture</title>
+      <link>/tags/architecture/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microservices</title>
+      <link>/tags/microservices/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/microservices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>payments</title>
+      <link>/tags/payments/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/payments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>platform</title>
+      <link>/tags/platform/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/platform/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>agile</title>
@@ -17,15 +71,6 @@
       <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/agile/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>architecture</title>
-      <link>/tags/architecture/</link>
-      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/architecture/</guid>
       <description></description>
     </item>
     
@@ -120,24 +165,6 @@
     </item>
     
     <item>
-      <title>Azure</title>
-      <link>/tags/azure/</link>
-      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/azure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cloud</title>
-      <link>/tags/cloud/</link>
-      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/cloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Microsoft</title>
       <link>/tags/microsoft/</link>
       <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
@@ -210,15 +237,6 @@
     </item>
     
     <item>
-      <title>platform</title>
-      <link>/tags/platform/</link>
-      <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/platform/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Mobile Banking</title>
       <link>/tags/mobile-banking/</link>
       <pubDate>Wed, 14 Dec 2016 00:00:00 +0100</pubDate>
@@ -260,15 +278,6 @@
       <pubDate>Mon, 15 Feb 2016 00:00:00 +0000</pubDate>
       
       <guid>/tags/contactless/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>payments</title>
-      <link>/tags/payments/</link>
-      <pubDate>Mon, 15 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/payments/</guid>
       <description></description>
     </item>
     
