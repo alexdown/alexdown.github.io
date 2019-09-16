@@ -15,6 +15,18 @@
   </url>
   
   <url>
+    <loc>/tags/azure/</loc>
+    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/cloud/</loc>
+    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/2019/07/howwebuiltid/</loc>
     <lastmod>2019-07-20T00:00:00+00:00</lastmod>
   </url>
@@ -27,18 +39,6 @@
   
   <url>
     <loc>/tags/architecture/</loc>
-    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/azure/</loc>
-    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/cloud/</loc>
     <lastmod>2019-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -282,6 +282,16 @@
   <url>
     <loc>/2014/12/cxapp/</loc>
     <lastmod>2014-12-11T12:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/10/cx/</loc>
+    <lastmod>2014-10-30T09:59:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/09/latency/</loc>
+    <lastmod>2014-09-12T03:56:00+00:00</lastmod>
   </url>
   
   <url>

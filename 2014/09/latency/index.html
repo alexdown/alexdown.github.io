@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
   <title>
-    Coin card, one year later // Alessio Basso
+    Latency vs. Response time // Alessio Basso
   </title>
 
   <link href="http://gmpg.org/xfn/11" rel="profile">
@@ -16,11 +16,11 @@
 <meta name="author" content="">
 <meta name="generator" content="Hugo 0.55.6" />
 
-  <meta property="og:title" content="Coin card, one year later" />
+  <meta property="og:title" content="Latency vs. Response time" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="/2014/08/onlycoin/" />
+<meta property="og:url" content="/2014/09/latency/" />
 
 
   
@@ -137,14 +137,14 @@
 	    
   		<section class="post">
             <h1 class="post-title">
-              <a href="/2014/08/onlycoin/">Coin card, one year later</a>
+              <a href="/2014/09/latency/">Latency vs. Response time</a>
             </h1>
             <h3 class="post-subtitle">
             	
             </h3>
             
             	<span class="post-date">
-                	<span class="post-date-day"><sup>24</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2014</span>
+                	<span class="post-date-day"><sup>12</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Sep</span> <span class="post-date-year">2014</span>
             	</span>
             	
             
@@ -158,45 +158,44 @@
 
 			
 
-            <p><a name="aTRB"></a>
-One year after my first (and - so far - only) blog post about <a href="http://linkis.com/Ee0Yi">Coin</a>, the company seems to be in trouble: backers are (rightfully) concerned about the <a href="http://linkis.com/rmIoS">product launch postponed for six months</a>, and commentators ask what are the future plans for the product after its target market - the US - adopt EMV chip cards.</p>
+            <p><a name="aIntro"></a>
+I was recently dragged into a call about application performances test, where people were discussing numbers and results trying to explain them in layman&rsquo;s terms.</p>
 
-<p><a name="aEMV"></a>
-It seems most of the backers are concerned about the future in regards to the rollout of chip cards in the US, but the <a href="http://linkis.com/n0GDo">FAQ on coin website</a> don&rsquo;t do much to address the concern, insisting it will work <em>during US&rsquo; EMV transition period</em> and <em>if it has a magnetic stripe</em>.</p>
+<p>However, I found that is useful to establish an unambiguous and common vocabulary between all parties involved. Here are some thoughts on the matter.</p>
 
-<p>As I highlighted one year ago, I think EMV is not the main issue. Let me clarify.</p>
+<p><a name="aResponsetime"></a>
+<strong>Response time</strong> - When discussing the <em>response time</em> of the system, people often refers to it as <em>latency</em>. Response time is instead the amount of time a system takes to react to a request once it has received one. For istance, the time between the instant we invoke an API and the instant this API returns the result of its computation, that&rsquo;s the response time.</p>
 
-<p><a name="aACC"></a>
-Coin always claimed it was <em>working with merchants</em> on acceptance, but haven&rsquo;t received endorsement from major retailers. That&rsquo;s one part of the problem: as <a href="http://linkis.com/5uUpA">reported by CNN</a>, the Coin card does not look like a normal credit card, and <em>it&rsquo;s easy to see how merchants outside of the Bay Area tech scene might be skeptical of a credit card that doesn&rsquo;t look like anything they&rsquo;ve seen before</em>.</p>
+<p><a name="aLatency"></a>
+<strong>Latency</strong> - Latency is sometimes - but not correctly - referred to as the &ldquo;response time&rdquo; of a given <em>remote</em> API (e.g. a webservice). When invoking a remote API, the total response time is the sum of the response time proper (the time needed by the system to compute a result) and the time your request (and their response) takes to travel over the network between client and server. The latter is the <em>latency</em> proper.</p>
 
-<p><a name="aFAQ"></a>
-Coin goes on saying, in its FAQ:
-<img src="/2014_08_faq-1.png" />
-Does everyone agrees that those features <em>clearly establish that you own a card</em>? Debatable.</p>
+<p><a name="aDelay"></a>
+If we consider the above definitions, when a backend system is being mocked to run performance tests in isolation, the <em>response time</em> of that particular backend is set to zero. If we artificially modify the mock code so that it takes a time &gt; 0 to return the mocked result, it&rsquo;s a <em>delay</em> we&rsquo;re adding and not - as it is sometimes referred to - a <em>latency</em>.</p>
 
-<p><a name="aJUR"></a>
-Moreover, in many jurisdictions, the rule is still <em>&ldquo;<a href="http://linkis.com/wF1Yi">the merchant is not permitted to accept a credit card [&hellip;] without presentation of the credit card</a>&ldquo;</em>.</p>
+<p><a name="aProfile"></a>
+<strong>Profiling</strong> - The first step of application performance analysis is profiling. It typically refers to monitoring the program execution, see if it makes the expected API calls, no more no less, and how much time these calls take. If there are steps that takes a suspiciously long time to execute, those are broken down to their constituent parts and analysed further to find the bottleneck.</p>
 
-<p><a name="aFTR"></a>
-I think Coin should offer the convenience of a &ldquo;one card to store them all&rdquo; together with the convenience of <strong>not</strong> relying on a smartphone to work. Work with issuers and merchants (to guarantee acceptance) and with regulators (to overcome the legal requirement of presenting the card in certain jurisdictions) is paramount for its success.</p>
+<p><a name="aLoadTest"></a>
+<strong>Load test</strong> - This is generally referred as generating a realistic load (i.e. a realistic number of concurrent threads accessing the application performing different tasks) to see if it can handle it.</p>
 
-<p><a name="aEND"></a>
-Failing that, disillusioned customers may be able to use coins for hotel loyalty cards, and not much more. But will be the likes of Hilton willing to accept it? ;)</p>
+<p><a name="aStressTest"></a>
+<strong>Stress test</strong> - This is different from the <em>load test</em> in the sense that it loads the application out of the normal functioning parameters, for instance by:</p>
+
+<ul>
+<li>using more concurrent users than expected</li>
+<li>executing a sequence of tasks which is not part of the normal usage pattern of the app (e.g. repeat the same task many times in sequence).</li>
+</ul>
+
+<p>Also, an important factor to verify is if the application can recover automatically from a situation of stress, going back to normal functioning when the load decreases.</p>
+
+<p><a name="aEnduranceTest"></a>
+<strong>Endurance test</strong> - Refers to the practice of running a load test for an extended period of time (usually 24h or more). Ensures there is no degradation of application performances due to bad management of resources (e.g. non released connections, memory leaks, etc).</p>
+
+<p>Looking forward for your comments, suggestions, corrections, real-life experiences&hellip; ;)</p>
 
 	
 			
 
-			
-				<div class="tags-list">
-					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
-					
-	                <a class="post-tag post-tag-fintech" href="/tags/fintech">fintech</a>,
-	                
-	                <a class="post-tag post-tag-review" href="/tags/review">review</a>,
-	                
-	                <a class="post-tag post-tag-ui" href="/tags/ui">UI</a>,
-	                
-				</div>
 			
 
 			
@@ -205,14 +204,14 @@ Failing that, disillusioned customers may be able to use coins for hotel loyalty
 					
 					<div class="paging-newer">
 						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="/ccwallet/">Credit cards and electronic wallet</a>
+						<a class="paging-link" href="/2014/08/onlycoin/">Coin card, one year later</a>
 		            </div>
 		            
 
 					
 					<div class="paging-older">
 						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="/2014/09/latency/">Latency vs. Response time</a>
+			            <a class="paging-link" href="/2014/10/cx/">A Website&#39;s restyling</a>
 		            </div>
 		            
 	            </div>

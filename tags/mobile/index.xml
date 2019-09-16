@@ -34,5 +34,16 @@ I downloaded the android version, and gave it a try. TL;DR? It&amp;rsquo;s bette
   Page transitions (see below an example of the language selection) are ok, but the &amp;ldquo;back&amp;rdquo; button should animate from left to right, not right to left.</description>
     </item>
     
+    <item>
+      <title>A Website&#39;s restyling</title>
+      <link>/2014/10/cx/</link>
+      <pubDate>Thu, 30 Oct 2014 09:59:00 +0000</pubDate>
+      
+      <guid>/2014/10/cx/</guid>
+      <description>Last Sunday, Cathay Pacific launched a new restyling for its website. It looks modern while still elegant, and — most important, given the lacking of a mobile app to book flights — it looks good on a mobile.
+I write “looks” good, because when you start using it, lots of small issues becomes evident. Let’s start from the beginning.
+ When I first open the home page, everything looks good.</description>
+    </item>
+    
   </channel>
 </rss>

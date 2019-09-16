@@ -12,16 +12,7 @@
     
     
     <item>
-      <title>architecture</title>
-      <link>/tags/architecture/</link>
-      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/architecture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>azure</title>
+      <title>Azure</title>
       <link>/tags/azure/</link>
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -30,11 +21,20 @@
     </item>
     
     <item>
-      <title>cloud</title>
+      <title>Cloud</title>
       <link>/tags/cloud/</link>
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>architecture</title>
+      <link>/tags/architecture/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/architecture/</guid>
       <description></description>
     </item>
     

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
   <title>
-    Coin card, one year later // Alessio Basso
+    A Website&#39;s restyling // Alessio Basso
   </title>
 
   <link href="http://gmpg.org/xfn/11" rel="profile">
@@ -16,11 +16,11 @@
 <meta name="author" content="">
 <meta name="generator" content="Hugo 0.55.6" />
 
-  <meta property="og:title" content="Coin card, one year later" />
+  <meta property="og:title" content="A Website&#39;s restyling" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="/2014/08/onlycoin/" />
+<meta property="og:url" content="/2014/10/cx/" />
 
 
   
@@ -137,14 +137,14 @@
 	    
   		<section class="post">
             <h1 class="post-title">
-              <a href="/2014/08/onlycoin/">Coin card, one year later</a>
+              <a href="/2014/10/cx/">A Website&#39;s restyling</a>
             </h1>
             <h3 class="post-subtitle">
             	
             </h3>
             
             	<span class="post-date">
-                	<span class="post-date-day"><sup>24</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2014</span>
+                	<span class="post-date-day"><sup>30</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Oct</span> <span class="post-date-year">2014</span>
             	</span>
             	
             
@@ -158,30 +158,87 @@
 
 			
 
-            <p><a name="aTRB"></a>
-One year after my first (and - so far - only) blog post about <a href="http://linkis.com/Ee0Yi">Coin</a>, the company seems to be in trouble: backers are (rightfully) concerned about the <a href="http://linkis.com/rmIoS">product launch postponed for six months</a>, and commentators ask what are the future plans for the product after its target market - the US - adopt EMV chip cards.</p>
+            <p><a name="aIntro"></a>
+Last Sunday, Cathay Pacific launched a new restyling for its website. It looks modern while still elegant, and — most important, given the lacking of a mobile app to book flights — it looks good on a mobile.</p>
 
-<p><a name="aEMV"></a>
-It seems most of the backers are concerned about the future in regards to the rollout of chip cards in the US, but the <a href="http://linkis.com/n0GDo">FAQ on coin website</a> don&rsquo;t do much to address the concern, insisting it will work <em>during US&rsquo; EMV transition period</em> and <em>if it has a magnetic stripe</em>.</p>
+<p>I write “looks” good, because when you start using it, lots of small issues becomes evident. Let’s start from the beginning.</p>
 
-<p>As I highlighted one year ago, I think EMV is not the main issue. Let me clarify.</p>
+<p><a name="aMenu"></a>
+When I first open the home page, everything looks good. Side menu is mobile-y. Animation runs smooth. First slip are the links.
+When I decide to <em>book</em> something and then select <em>flight</em> (well, the only option), nothing happens. Missing link? Maybe…</p>
 
-<p><a name="aACC"></a>
-Coin always claimed it was <em>working with merchants</em> on acceptance, but haven&rsquo;t received endorsement from major retailers. That&rsquo;s one part of the problem: as <a href="http://linkis.com/5uUpA">reported by CNN</a>, the Coin card does not look like a normal credit card, and <em>it&rsquo;s easy to see how merchants outside of the Bay Area tech scene might be skeptical of a credit card that doesn&rsquo;t look like anything they&rsquo;ve seen before</em>.</p>
+<div align="center">
+    <img src="/2014_10_cx1a.png" style="display: inline;" width="30%" />
+    <img src="/2014_10_cx1b.png" style="display: inline;" width="30%" />
+    <img src="/2014_10_cx1c.png" style="display: inline;" width="30%" />
+</div>
 
-<p><a name="aFAQ"></a>
-Coin goes on saying, in its FAQ:
-<img src="/2014_08_faq-1.png" />
-Does everyone agrees that those features <em>clearly establish that you own a card</em>? Debatable.</p>
+<p>Also, the keyboard stay alphanumeric even if I&rsquo;m asked to enter a PIN&hellip; <code> &#x3C;input&#x3E;</code> without the <code>pattern</code> attribute&hellip;</p>
 
-<p><a name="aJUR"></a>
-Moreover, in many jurisdictions, the rule is still <em>&ldquo;<a href="http://linkis.com/wF1Yi">the merchant is not permitted to accept a credit card [&hellip;] without presentation of the credit card</a>&ldquo;</em>.</p>
+<p>Let’s move to the booking part. A short scroll down, and I can insert departure and destination airport.</p>
 
-<p><a name="aFTR"></a>
-I think Coin should offer the convenience of a &ldquo;one card to store them all&rdquo; together with the convenience of <strong>not</strong> relying on a smartphone to work. Work with issuers and merchants (to guarantee acceptance) and with regulators (to overcome the legal requirement of presenting the card in certain jurisdictions) is paramount for its success.</p>
+<p><a name="aBook"></a>
+All good, also the suggestion of any previous search. I like the fact that the date form element and other details (number of travellers, etc) appears <em>after</em> I select the destination… unclutters the homepage.</p>
 
-<p><a name="aEND"></a>
-Failing that, disillusioned customers may be able to use coins for hotel loyalty cards, and not much more. But will be the likes of Hilton willing to accept it? ;)</p>
+<div align="center">
+    <img src="/2014_10_cx3.png" style="display: inline;" width="40%" />
+    <img src="/2014_10_cx2.png" style="display: inline;" width="40%" />
+</div>
+
+<p><a name="aDatepicker"></a>
+However, a main issue happens on the datepicker. When I tap on one of the two date fields, either <em>Departing on</em> or <em>Returning on</em>, the datepicker <em>Confirm</em> button is visible only if I scroll down.</p>
+
+<div align="center">
+    <img src="/2014_10_cx4.png" style="display: inline;" width="40%" />
+    <img src="/2014_10_cx5.png" style="display: inline;" width="40%" />
+</div>
+
+<p><a name="aDatepickerBA"></a>
+This is not because the datepicker is bigger than the viewport, but because it is anchored to the date fields. This may be a deliberate choice, to allow the customer to modify the values for “return/ one way” and “=/- 3 days”, but the result is confusing, because the user doesn’t immediately see the <em>Confirm</em> button, and so his “way out” of the datepicker.</p>
+
+<p>If you compare it with another website, for instance ba.com, the datepicker is anchored to the top of the screen, and it’s modal. <em>Confirm</em> and <em>Cancel</em> are clearly visible.</p>
+
+<div align="center">
+    <img src="/2014_10_cx6.png" style="display: inline;" width="40%" />
+    <img src="/2014_10_cx7.png" style="display: inline;" width="40%" />
+</div>
+
+<p><a name="aBooking"></a>
+The biggest disappointment happens when you click <em>Search flights</em>: the second screen (and all the subsequent) is not mobile optimised. Although text is displayed with a font size suitable for mobile, the datepicker does not adapt to the mobile form factor, nor does the price summary.</p>
+
+<div align="center">
+    <img src="/2014_10_cx8.png" style="display: inline;" width="40%" />
+    <img src="/2014_10_cx9.png" style="display: inline;" width="40%" />
+</div>
+
+<p><a name="aBars"></a>
+Back to ba.com for a moment, the way the search results are presented is mobile optimised: if the intention was that all price options are clearly visible on one screen, there are other types of view that could have been better suitable for a mobile screen, like the skyscanner one:</p>
+
+<div align="center">
+    <img src="/2014_10_cx10.png" style="display: inline;" width="40%" />
+    <img src="/2014_10_cx11.png" style="display: inline;" width="40%" />
+</div>
+
+<p><a name="aBookingCont"></a>
+All subsequent screens on the booking journey are not mobile optimised.</p>
+
+<div align="center">
+    <img src="/2014_10_cx12.png" style="display: inline;" width="40%" />
+    <img src="/2014_10_cx13.png" style="display: inline;" width="40%" />
+</div>
+
+<p><a name="aConclusion"></a>
+Is it a deliberate choice? I don’t know. Surely, a customer who starts a booking on a mobile, expect the experience to be consistent. I can only imagine a very high abandonment rate, especially considering that it is still not possible — at least on android — to book using the Cathay Pacific mobile app.</p>
+
+<hr />
+
+<p><a name="aUpdate"></a>
+<img src="/2014_10_cx14.png" style="float: right; margin: 10px;" width="30%"/>
+<strong>Update</strong>: it seems there is an issue on the <em>live chat</em> functionality, the one that allows to get in touch with a staff member to get support during the booking process.</p>
+
+<p>When the user taps on the “live chat” icon, a new browser window opens, but Google Chrome shows the certificate not valid message.</p>
+
+<p>The certificate is indeed signed by a valid CA, but Chrome mobile shows the red open lock… Chome for desktop reports an error as well, albeit without the red lock icon.</p>
 
 	
 			
@@ -190,7 +247,7 @@ Failing that, disillusioned customers may be able to use coins for hotel loyalty
 				<div class="tags-list">
 					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
 					
-	                <a class="post-tag post-tag-fintech" href="/tags/fintech">fintech</a>,
+	                <a class="post-tag post-tag-mobile" href="/tags/mobile">mobile</a>,
 	                
 	                <a class="post-tag post-tag-review" href="/tags/review">review</a>,
 	                
@@ -205,14 +262,14 @@ Failing that, disillusioned customers may be able to use coins for hotel loyalty
 					
 					<div class="paging-newer">
 						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="/ccwallet/">Credit cards and electronic wallet</a>
+						<a class="paging-link" href="/2014/09/latency/">Latency vs. Response time</a>
 		            </div>
 		            
 
 					
 					<div class="paging-older">
 						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="/2014/09/latency/">Latency vs. Response time</a>
+			            <a class="paging-link" href="/2014/12/cxapp/">Cathay Pacific, mobile app</a>
 		            </div>
 		            
 	            </div>
