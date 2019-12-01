@@ -6,10 +6,22 @@
     <description>Recent content in Cloud on Alessio Basso</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Sat, 20 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SPARKling PayMe</title>
+      <link>/2019/11/paymespark/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/11/paymespark/</guid>
+      <description>In early October, a delegation from PayMe team went to Amsterdam to attend the Spark+AI Summit.
+ It was a productive week of sharing experiences, meeting practitioners, as well as learn what&amp;rsquo;s coming next in the Spark ecosystem&amp;hellip;
+We also had a chance to share our experience using data and Databricks to enable a Data Driven Roadmap for our #paymehk products (PayMe and PayMe for Business)&amp;hellip;
+&amp;hellip;some say it&amp;rsquo;s worth 18 minutes of your time&amp;hellip; see it for yourself :)</description>
+    </item>
     
     <item>
       <title>PayMe for Business: How we built it?</title>
