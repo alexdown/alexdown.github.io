@@ -6,10 +6,22 @@
     <description>Recent content in architecture on Alessio Basso</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 08 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Thoughts on the role of Technology Architects</title>
+      <link>/2020/03/gardener/</link>
+      <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/gardener/</guid>
+      <description>I was reorganizing some files today, and found some (handwritten! :) notes from years past&amp;hellip; worth posting them, although they&amp;rsquo;re not very structured.
+On the Role of the Architect If I look at how I spend most of my time&amp;hellip; Technology Architects/ Technology Strategist do three things:
+ set directions make decisions solve problems  (not my definition, by the way&amp;hellip; David expanding on what this means)
+On centralized &amp;ldquo;platform&amp;rdquo; teams Platform as a Service is very similar in the way most old style IT programmes were: you built a central reusable service because it&amp;rsquo;s cheaper to operate common services centrally than reinvent the wheel every time.</description>
+    </item>
     
     <item>
       <title>SPARKling PayMe</title>

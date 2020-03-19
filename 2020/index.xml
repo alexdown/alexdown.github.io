@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>teams on Alessio Basso</title>
-    <link>/tags/teams/</link>
-    <description>Recent content in teams on Alessio Basso</description>
+    <title>2020s on Alessio Basso</title>
+    <link>/2020/</link>
+    <description>Recent content in 2020s on Alessio Basso</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Thu, 19 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/teams/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/2020/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,17 +21,6 @@
 On the Role of the Architect If I look at how I spend most of my time&amp;hellip; Technology Architects/ Technology Strategist do three things:
  set directions make decisions solve problems  (not my definition, by the way&amp;hellip; David expanding on what this means)
 On centralized &amp;ldquo;platform&amp;rdquo; teams Platform as a Service is very similar in the way most old style IT programmes were: you built a central reusable service because it&amp;rsquo;s cheaper to operate common services centrally than reinvent the wheel every time.</description>
-    </item>
-    
-    <item>
-      <title>Book review: Failure is not an option</title>
-      <link>/2019/07/kranz/</link>
-      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/07/kranz/</guid>
-      <description>I thought I&amp;rsquo;d share about a book I am reading now&amp;hellip; which I found memorable mainly for the type of teamwork and leadership it&amp;rsquo;s describing.
- GBS_insertEmbeddedViewer(&#39;ISBN:0743214471&#39;,300,480);   What about it?
-It&amp;rsquo;s describing work practices from the Gemini and Apollo mission control teams. Now: those were the people who worked - together with the astronauts - on all aspects of the space missions. They were involved in definition of objectives, feasibility, planning, to the design of every single aspect of the flights.</description>
     </item>
     
   </channel>

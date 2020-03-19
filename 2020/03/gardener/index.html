@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Thoughts on the role of Technology Architects // Alessio Basso
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.55.6" />
+
+  <meta property="og:title" content="Thoughts on the role of Technology Architects" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="/2020/03/gardener/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="/css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Alessio Basso" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', "UA-72520783-1", 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="https://pbs.twimg.com/profile_images/1191883080807698432/oJRJHlAs_400x400.jpg" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">852 tech</h1>
+    <h2 class="brand-tagline">Random ramblings about technology, fintech, mobile... anything that doesn&#39;t fit twitter&#39;s 140 characters.</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/profile">me</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/speaking">speaking</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/tags">tags</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="https://github.com/alexdown" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="https://hk.linkedin.com/in/alessiobasso" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="/index.xml" target="_blank"><i class='fa fa-rss'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/alxdwn" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#on-the-role-of-the-architect">On the Role of the Architect</a></li>
+<li><a href="#on-centralized-platform-teams">On centralized &ldquo;platform&rdquo; teams</a></li>
+<li><a href="#on-governance">On governance</a></li>
+<li><a href="#on-enterprise-adoption-of-technologies">On enterprise adoption of technologies</a></li>
+<li><a href="#on-managers-building-kingdoms">On managers building &ldquo;kingdoms&rdquo;</a></li>
+<li><a href="#on-vendors-vs-internal-buy-vs-build">On vendors vs. internal, buy vs. build&hellip;</a></li>
+<li><a href="#on-what-digital-is">On what &ldquo;digital&rdquo; is</a></li>
+<li><a href="#some-quotes">Some quotes</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/2020/03/gardener/">Thoughts on the role of Technology Architects</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>19</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Mar</span> <span class="post-date-year">2020</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            
+
+<p>I was reorganizing some files today, and found some (handwritten! :) notes from years past&hellip; worth posting them, although they&rsquo;re not very structured.</p>
+
+<h2 id="on-the-role-of-the-architect">On the Role of the Architect</h2>
+
+<p>If I look at how I spend most of my time&hellip; Technology Architects/ Technology Strategist do three things:</p>
+
+<ul>
+<li>set directions</li>
+<li>make decisions</li>
+<li>solve problems</li>
+</ul>
+
+<p>(not my definition, by the way&hellip; <a href="https://www.linkedin.com/pulse/you-solution-architect-problem-david-knott-1c/">David expanding on what this means</a>)</p>
+
+<h2 id="on-centralized-platform-teams">On centralized &ldquo;platform&rdquo; teams</h2>
+
+<p>Platform as a Service is very similar in the way most old style IT programmes were: you built a central reusable service because it&rsquo;s cheaper to operate common services centrally than reinvent the wheel every time.
+The difference here is in how you design and build this.
+It&rsquo;s not a central-team-led, super-extensible architecture to fit every single possible use case, like in the past.
+The secret is start simple, with one or few use cases that are the most immediate, and deliver these with an eye to building a service that is extensible.</p>
+
+<p><a href="https://gds.blog.gov.uk/2015/08/25/common-technology-services-technology-is-a-tool-not-a-barrier/">https://gds.blog.gov.uk/2015/08/25/common-technology-services-technology-is-a-tool-not-a-barrier/</a> well explain the (good) intentions of how many &ldquo;central infrastructure&rdquo; models start. Great idea on paper, hopefully it won&rsquo;t become sclerotic as things go along&hellip;. those teams should be designed to <strong>not impede agility</strong>, to help teams pick the right tradeoff between total freedom and contain expenses/complexity.</p>
+
+<p>We may use a vendor (with a vendor product) to speed things up &ndash; of course, keep always in sight what is that we want to deliver. In selecting the vendor, do not rate features for features&rsquo; sake, but pick the one vendor that let you deliver the MVP (ok, maybe MVP+1 or MVP+2 😃), but that also is structured in a way you can plug, play and replace services. You will not live with a service forever, so think about how easy is to handle it rather than how elegant it is. Code is disposable - that&rsquo;s another great idea from a colleague (<a href="http://nic.ferrier.me.uk/">Nic</a>) that&rsquo;s very hard to get people to accept.</p>
+
+<p>Such central services may even be developed/delivered by a department&rsquo;s team &ndash; no need <em>for the team</em> to be centrally located/managed (as in &ldquo;from HQ&rdquo;). The key here is for the team to consider the &ldquo;platform&rdquo; requirements of extensibility and decoupling as priority. A central team may help make sure that these don&rsquo;t get lost as the project (and the pressure to deliver) progress.</p>
+
+<p>There are some &ldquo;infrastructure&rdquo; project that are more suitable for central development and delivery &ldquo;as a Service&rdquo;: Payments, Notifications, Identity, etc&hellip; these are also the service that many organisations chose to deliver centrally. Not a coincidence.</p>
+
+<h2 id="on-governance">On governance</h2>
+
+<p>The central team should implement &ldquo;governance&rdquo; not in a &ldquo;governor&rdquo; way, but in a &ldquo;gardener&rdquo; way. You know the gardener&rsquo;s metaphor?</p>
+
+<p>IT architects (or central strategy teams, or CIO, or&hellip; call them how you prefer) are more like gardeners that oversee a garden growing. they do not mandate exactly how each plant will grow - that would be impossible.</p>
+
+<p>What they can do is keep an eye on the big picture and how every single area of the garden and each plant evolves - or in our metaphor, how other gardeners plan to change and let it grow in the near future - and make sure that the whole is coherent. Details are typically not important, unless they prevent two different areas of the garden from &ldquo;looking good&rdquo; next to one another in the big picture (in IT parlance, <strong>siloed applications built with no interface</strong>).</p>
+
+<h2 id="on-enterprise-adoption-of-technologies">On enterprise adoption of technologies</h2>
+
+<p>The methapor works very well to cover small projects ran with the goal of acquiring know-how or technologies. Those are like growing a specific tree in one area of the garden, where you have empty space so it doesn&rsquo;t matter much to have one additional plant, as it doesn&rsquo;t bother the other plants&hellip;
+When it starts growing though, you may have to transplant it, and maybe create a special area od the garden just for it.</p>
+
+<p>It&rsquo;s the case for when you adopt a technology as secondary goal on a project whose goal is to deliver something else. You can incubate it there, but soon enough - if the tech is really strategic - you&rsquo;ll have to move it somewhere independent for it to grow further.</p>
+
+<p>As <a href="https://gds.blog.gov.uk/2016/05/11/what-government-might-look-like-in-2030/">https://gds.blog.gov.uk/2016/05/11/what-government-might-look-like-in-2030/</a> says:</p>
+
+<blockquote>
+<p>we’re setting and defining standards for whole services and good service design
+    - we’re building, or helping departments to build, new common components that make services easier to assemble - a shared digital infrastructure
+    [&hellip;]
+    The formal strategy document will be published in due course. But a strategy document doesn’t matter as much as running code - [&hellip;]&ldquo;&rdquo;</p>
+</blockquote>
+
+<p>What matters is running code &ndash; and delivering on it is so much easier if there is an associated business goal to be delivered together with it.</p>
+
+<p>When you first grow this plant, you don&rsquo;t have anything &lsquo;proper&rsquo; around it: no landscaping, no irrigation&hellip; nothing. It&rsquo;s ok. No need to focus on the surroundings, no need to build a whole interconnected IT ecosystem if it&rsquo;s really too early and all you&rsquo;re doing at this stage is just playing with a technology.</p>
+
+<h2 id="on-managers-building-kingdoms">On managers building &ldquo;kingdoms&rdquo;</h2>
+
+<p>Similarly, if you plant a new plant and it grows, but kind of anemic and you can&rsquo;t really find it a place where to transplant it, or anywhere else in the garden where it looks good&hellip; it&rsquo;s ok to get rid of it altogether.
+The key here is make sure that gardeners who took care of it have something else to do, or that they don&rsquo;t take it too seriously and start wagering wars to keep their beloved plant in the garden.</p>
+
+<h2 id="on-vendors-vs-internal-buy-vs-build">On vendors vs. internal, buy vs. build&hellip;</h2>
+
+<p>Vendor enable flexibility. It allows you to scale very quickly, get the right skills onboard&hellip;
+However, big vendor contracts is a form of lock in. Most big corporations have &ldquo;agreements&rdquo; with a few big vendors. While these big vendors can somehow address all of a big organisation&rsquo;s needs, they do it expensively.
+Most times it&rsquo;s not the right way. Small local companies may do things better. Be small, and hence more approachable. Less waste, and less &ldquo;lost in translation&rdquo; on multiple layers of management.</p>
+
+<h2 id="on-what-digital-is">On what &ldquo;digital&rdquo; is</h2>
+
+<p>I&rsquo;m going to give you the frontpage answer - before I give you the technologist&rsquo;s one.
+Digital is about connecting with the customer, in the way they - not you - would find it convenient.
+Technologist&rsquo;s answer is sightly different. It&rsquo;s still about the customer, but focussed on solving with technology only the problems that are worth being solved.
+This means we&rsquo;re not idealists nor mere executors. We don&rsquo;t do tech for the sake of it, nor we just build stuff our &ldquo;business&rdquo; asks us to build.
+We work together to establish what makes sense (from a technology, service, cost perspective), and help making decisions on tradeoffs.</p>
+
+<h2 id="some-quotes">Some quotes</h2>
+
+<p>From <a href="https://gds.blog.gov.uk/2015/10/05/status-tracking-making-it-easy-to-keep-users-informed/">https://gds.blog.gov.uk/2015/10/05/status-tracking-making-it-easy-to-keep-users-informed/</a></p>
+
+<blockquote>
+<p>&ldquo;So we’ll also be prototyping an interface that will let back-office staff send notifications directly, without any integration to existing systems. This might be an individual text message from a caseworker or perhaps a batch of receipts uploaded in a spreadsheet that post-room staff created.
+    At this stage, we don’t think this platform should do much more than these things. It’s important to us that platforms do simple things really, really well&rdquo;</p>
+</blockquote>
+
+<p>From <a href="https://gds.blog.gov.uk/2015/11/03/making-data-a-public-asset-through-infrastructure/">https://gds.blog.gov.uk/2015/11/03/making-data-a-public-asset-through-infrastructure/</a></p>
+
+<blockquote>
+<p>&ldquo;This ecosystem isn&rsquo;t the result of a grand design. It’s the result of a series of pragmatic decisions made in the context of individual organisations and services, based on (mostly internal) user needs, cost, and available skill sets.&rdquo;</p>
+</blockquote>
+
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-architecture" href="/tags/architecture">architecture</a>,
+	                
+	                <a class="post-tag post-tag-teams" href="/tags/teams">teams</a>,
+	                
+	                <a class="post-tag post-tag-management" href="/tags/management">management</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/2019/11/paymespark/">SPARKling PayMe</a>
+		            </div>
+		            
+
+					
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alexdown" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2020. All rights reserved.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>
