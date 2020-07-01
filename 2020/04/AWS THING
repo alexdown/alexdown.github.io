@@ -1,0 +1,36 @@
+AWS THING
+
+1. Assessment and Planning
+    What stage is your company at? 
+        how many customer do you have   
+        what's your growth
+        how much longer before you grow out of your current setup?
+    Order of changes (proposal as below, but open for feedback)
+    Cost Assessment (you don't want to be bankrupt by amazon bill!)
+        calculator
+        amazon offers for startups e.g. credits, free services if you use the private preview, ...
+2. Migration
+    Infra provisioning automation 
+    Data layer
+        IP
+    Web layer
+        what does it look like: SPA+php API?
+        CDN for static assets (image, but also client-side code, ...)
+    Cost Assessment - checkpoint
+3. Stabilization
+    Revise security model
+    Appl refactor
+        security
+        horizontal scaling
+            session/status?
+            loadbalancing/session affinity?
+    Monitoring
+        autoscaling
+        self healing? (cb, retry, health check, ...)
+    Pipelines
+    DR process
+    Cost Assessment - checkpoint
+4. Further Improvements
+    Privileged access
+    Data archiving
+    non-prod?
