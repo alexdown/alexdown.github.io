@@ -6,10 +6,22 @@
     <description>Recent content in architecture on Alessio Basso</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Thu, 19 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Book review: The Innovator&#39;s dilemma</title>
+      <link>/2020/07/dilemma/</link>
+      <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/07/dilemma/</guid>
+      <description>I thought I&amp;rsquo;d share about a book I just finished reading&amp;hellip; which I found memorable mainly because it provides a simple framework to understand what - at first look - seems to all of us working in big companies just corporate politics against common sense.
+The book is &amp;ldquo;The Innovator&amp;rsquo;s Dilemma&amp;rdquo;, by Clayton Christensen.
+ GBS_insertEmbeddedViewer(&amp;lsquo;ISBN:0875845851&amp;rsquo;,600,500);  
+What about it? TL;DR successfull, well run companies that dominates industries and are on a trajectory of sustaining innovation (i.</description>
+    </item>
     
     <item>
       <title>Thoughts on the role of Technology Architects</title>
