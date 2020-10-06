@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Building an API ecosystem // Alessio Basso
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.55.6" />
+
+  <meta property="og:title" content="Building an API ecosystem" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="/2020/09/apiecosystem/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="/css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Alessio Basso" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', "UA-72520783-1", 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="https://pbs.twimg.com/profile_images/1191883080807698432/oJRJHlAs_400x400.jpg" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">852 tech</h1>
+    <h2 class="brand-tagline">Random ramblings about technology, fintech, mobile... anything that doesn&#39;t fit twitter&#39;s 140 characters.</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/profile">me</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/speaking">speaking</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/tags">tags</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="https://github.com/alexdown" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="https://hk.linkedin.com/in/alessiobasso" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="/index.xml" target="_blank"><i class='fa fa-rss'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/alxdwn" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#what-is-payme">What is PayMe</a></li>
+<li><a href="#delivering-an-api-product">Delivering an API product</a></li>
+<li><a href="#what-we-overlooked">What we overlooked</a>
+<ul>
+<li><a href="#monitor-your-api-consumers">Monitor your API consumers</a></li>
+<li><a href="#test-is-more-than-does-it-work">Test is more than &lsquo;does it work?&rsquo;</a></li>
+</ul></li>
+<li><a href="#from-test-to-certification">From Test to Certification?</a></li>
+<li><a href="#even-better-if">Even better if</a></li>
+<li><a href="#why-ecosystem">Why ecosystem?</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/2020/09/apiecosystem/">Building an API ecosystem</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>23</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Sep</span> <span class="post-date-year">2020</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            
+
+<blockquote>
+<p>This is the writeup of a session I delivered at both the <a href="https://www.anpasia.com/newsletterweb/41435B4B7647425D4379474659/424B5A4A7746465A437342425F43?noTracking=true">Hong Kong Computer Society EASIG Seminar</a> and <a href="https://www.youtube.com/watch?v=oLz_yHGbThI&amp;feature=youtu.be">Cloud Expo Asia</a>. It&rsquo;s about how, at <a href="https://payme.hsbc.com.hk/">PayMe</a>, we started by creating an <a href="https://developers.payme.hsbc.com.hk/">API product</a> but realized our goal should have been to build an ecosystem instead.</p>
+</blockquote>
+
+<h2 id="what-is-payme">What is PayMe</h2>
+
+<p>Wikipedia makes a decent job of explaining it: <a href="https://en.wikipedia.org/wiki/PayMe">https://en.wikipedia.org/wiki/PayMe</a>, although it&rsquo;s a bit light on the products that are most relevant to this post: <a href="https://payme.hsbc.com.hk/business-api">API</a> and <a href="https://payme.hsbc.com.hk/business-point-of-sale">POS</a>.</p>
+
+<p>For the first two years of its existence, PayMe was a closed-loop payment network: only people with PayMe could send and receive payments, only merchants using PayMe for Business could collect payments from PayMe users.</p>
+
+<div align="center">
+    <img src="/2020/09/payme-closedloop.png" style="display: inline;" width="60%" alt="PayMe is a payment network to engage both consumers and merchants"/>
+</div>
+
+<p>This kinda of changed when we joined the <a href="https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/financial-market-infrastructure/faster-payment-system-fps/">Hong Kong FPS (Faster Payments)</a> system in 2019: PayMe users could send money to, and receive money from, other banks and SVF, and PayMe for Business merchants could be paid by non-PayMe users using other FPS-compatible apps and wallets. But that was not enough.</p>
+
+<h2 id="delivering-an-api-product">Delivering an API product</h2>
+
+<p>We realized pretty quickly that you can’t reach economies of scale if you do all by your own (that’s a lesson some big companies – Microsoft for example – have executed very well in the past few years).</p>
+
+<div align="center">
+    <img src="/2020/09/payme-closedloop-partners.png" style="display: inline;" width="60%" alt="Partners are a key actor in this network"/>
+</div>
+
+<p>So we built a nice <a href="https://developers.payme.hsbc.com.hk/">developer portal</a>, with information about our API, how to integrate with them, how to use them… and a number of Hong Kong startups (like <a href="https://shopline.hk/blog/paymeforbusiness_shopline/">SHOPLINE</a>, <a href="https://www.boutir.com/">Boutir</a>, <a href="https://www.posify.me/hk/payme-for-business">Posify</a>, <a href="https://www.mshop-app.com/%E6%88%91%E5%B7%B2%E7%B6%93%E6%93%81%E6%9C%89-payme-for-business-%E8%A9%B2%E5%A6%82%E4%BD%95%E5%8F%96%E5%BE%97-payme-for-business-%E5%95%9F%E5%8B%95%E4%BB%A3%E7%A2%BC%E5%95%9F%E5%8B%95%E7%B6%B2/">MonsterApp</a>, and many more) started to work with us to add those APIs to their product offering.</p>
+
+<p>Now we had a portal with all the technical documentation, but how what do we tell to a 3rd party company – that either come to us or that we reached out to – when they ask “how do we proceed to use your services via API?”.
+Thankfully, we were not the first to do so :) There are plenty of developer portals/ API portals around that list their &ldquo;path to live&rdquo; steps.</p>
+
+<div align="center">
+    <img src="/2020/09/apilive-steps.png" style="display: inline;" width="80%" alt="Example of 'path to live' for APIs"/>
+</div>
+
+<p>We settled on a 7-steps process:</p>
+
+<ol>
+<li>Create dev portal account</li>
+<li>Choose the API you want to use</li>
+<li>Get API key &amp; secret</li>
+<li>Integrate (auth, certs, msg encryption &amp; signing, …)</li>
+<li>Test</li>
+<li>Go live (profit! ;-)</li>
+</ol>
+
+<h2 id="what-we-overlooked">What we overlooked</h2>
+
+<p>Once our first integrations were live, we realized we oversimplified one very important step from this list, and completely overlooked another:</p>
+
+<ul>
+<li><strong>Monitor</strong> your users</li>
+<li><strong>Test</strong></li>
+</ul>
+
+<p>Let&rsquo;s explain what those are with some examples.</p>
+
+<h3 id="monitor-your-api-consumers">Monitor your API consumers</h3>
+
+<p>You need to monitor your API consumers, as in: monitor how they use your APIs (call patterns, etc).<br />
+This is important for you to be able to verify that:</p>
+
+<ol>
+<li>your APIs are used as <em>intended</em><br /></li>
+<li>your APIs usage is <em>appropriate</em></li>
+</ol>
+
+<p>As an example, the PayMe APIs work in a way that the consumer need to first call a <code>/token</code> endpoint, exchanging its credentials to obtain an JWT token, and then use said JWT token to call the actual <code>/payments</code> API endpoint.<br />
+The JWT token has a certain validity, so that the API consumer can make many calls to the <code>/payments</code> API using the same JWT token within its validity period.<br />
+When the JWT token expires, a new JWT token must be obtained again from the <code>/token</code> endpoint.</p>
+
+<div align="center">
+    <img src="/2020/09/payme-api-calls000.png" style="display: inline;" width="80%" alt="How to call PayMe OpenAPI"/>
+</div>
+
+<p>Because of this design, we expected to receive many more calls to the <code>/payments</code> endpoint than we expected to see on the <code>/token</code> endpoint.<br />
+But our monitoring picked up that, for a specific API consumer, this was not the case: we were receiving <em>the same number of calls</em>. A quick look at the actual traffic confirmed that the API consumer was obtaining a new JWT token <em>for each API call</em>.</p>
+
+<p>In this case, monitoring helped us to catch an instance where <strong>our APIs were not used as intended</strong>.</p>
+
+<p>&ndash;</p>
+
+<p>Another example: the PayMe API allow a consumer to receive <em>webhook</em> calls. A Webhook is an https call that the PayMe system make to the API consumer system, to notify about events that have happened. For instance, an API consumer may register to receive a webhook call when a <code>PaymentRequest</code> has been paid, eliminating the need for polling.</p>
+
+<p>Because of this design, we expected to receive very few (if not zero) calls to the <code>GET /paymentrequests/{paymentRequestId}</code> endpoint, because the result of a payment would have already been sent to the merchants via webhook, the moment it happened.<br />
+But our monitoring picked up that, for a specific API consumer, this was not the case: we were receiving <em>a burst of</em> <code>GET /paymentrequests/{paymentRequestId}</code> calls <em>immediately after each PaymentRequest creation</em>.</p>
+
+<p>In this case, monitoring helped us to catch an instance where <strong>our APIs were used inappropriately</strong> (semantically, the API use was correct, unlike in the previous example. But there was a better way - webhooks - to perform the same function).</p>
+
+<h3 id="test-is-more-than-does-it-work">Test is more than &lsquo;does it work?&rsquo;</h3>
+
+<p>Having a set of positive and negative test cases, and run them to make sure all user journey &lsquo;work&rsquo; is certainly important.. but it&rsquo;s not everything.<br />
+It is also very important that you check:</p>
+
+<ol>
+<li>are branding assets in the right place, in the right format?</li>
+<li>is error handling implemented adequately?</li>
+</ol>
+
+<p>This is important to address reputational risk. Your logo is likely to be present in the partner&rsquo;s service screen, in some case very prominently (like in the below screenshots).</p>
+
+<div align="center">
+    <img src="/2020/09/payme-ecomm-errors.png" style="display: inline;" width="80%" alt="Test correct branding assers are used, as well as proper error handling"/>
+</div>
+
+<p>In this case, the specific error code (500, 429) was surfaced to the user, with no indication about what the next action (from the user perspective) would need to be&hellip; a better implementation would have hidden the technical error codes from the user, handling a 429 with a retry, and providing a better wording for the 500.</p>
+
+<p>You want to make sure all aspect of the journeys implementation, including error handling, are done right… because if something is not right, the user is very likely to associate the issue with your brand, not with the 3rd party service.</p>
+
+<h2 id="from-test-to-certification">From Test to Certification?</h2>
+
+<p>We found useful to think in term of <em>certification</em> rather than <em>testing</em>, as a precondition to go-live.<br />
+We want out API consumers to meet our non-negotiable baseline for service quality (which include aspects other than just &ldquo;does it work?&rdquo;) before we allow them to provide our service on their platforms.</p>
+
+<p>Of course, this raise a new challenge, which is to determine how much effort should the certification process be.<br />
+A startup have a higher risk appetite, and usually less resources (people, money) to dedicate to this certification&hellip; so it&rsquo;s our responsibility, as the most risk-averse partner, <strong>to create a certification process that does not discourage partners</strong> from wanting to integrate with us.</p>
+
+<h2 id="even-better-if">Even better if</h2>
+
+<p>The above is just table stakes, you <strong>have to</strong> do this if you want to be successful in delivering an API product.</p>
+
+<p>But nobody is in the business of delivery an API product!<br />
+We all are - us and our API consumers/partners - in the business of providing a product to our end customers.
+So the best approach is to work <em>together</em> with your partners, as in:</p>
+
+<ul>
+<li>your API consumers are your <strong>partners</strong>, not your customers</li>
+<li>Look for win-win solutions:
+
+<ul>
+<li>It’s not “my service”, “your service”, &hellip; it&rsquo;s &ldquo;our service&rdquo;</li>
+<li>What the customer see is one single service, regardlessof which company provides which part</li>
+</ul></li>
+<li>Prioritize in your roadmap features that make things simpler for the organizations you partner with!</li>
+</ul>
+
+<p>Aim to build an <em><strong>ecosystem</strong></em>.</p>
+
+<h2 id="why-ecosystem">Why ecosystem?</h2>
+
+<ul>
+<li>Your API provide added valuethe partner’s product</li>
+<li>The partner’s product extend the reachof your API and brand</li>
+<li>The partner may provide features or cover a segmentyou don’t want to invest in</li>
+</ul>
+
+<p>Both products (yours and partners) are more valuablethan they’ll be on their own!</p>
+
+<p>This relationship is linear if you consider each one of the relationships you have with your API partners.<br />
+But being at the center of this network, you are in a great position to facilitate collaboration <em>between your partners</em> as well!<br />
+(for example, you work with an e-commerce platform and an online blogging platform, separately.</p>
+
+<p>This is what enables <em>being part of the ecosystem</em> exponentially more valuable, for both you and your partners.</p>
+
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-architecture" href="/tags/architecture">architecture</a>,
+	                
+	                <a class="post-tag post-tag-cloud" href="/tags/cloud">cloud</a>,
+	                
+	                <a class="post-tag post-tag-product" href="/tags/product">product</a>,
+	                
+	                <a class="post-tag post-tag-platform" href="/tags/platform">platform</a>,
+	                
+	                <a class="post-tag post-tag-partnership" href="/tags/partnership">partnership</a>,
+	                
+	                <a class="post-tag post-tag-api" href="/tags/api">API</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/2020/07/dilemma/">Book review: The Innovator&#39;s Dilemma</a>
+		            </div>
+		            
+
+					
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alexdown" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2020. All rights reserved.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

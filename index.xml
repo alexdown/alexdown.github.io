@@ -6,10 +6,20 @@
     <description>Recent content on Alessio Basso</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 07 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building an API ecosystem</title>
+      <link>/2020/09/apiecosystem/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/09/apiecosystem/</guid>
+      <description>This is the writeup of a session I delivered at both the Hong Kong Computer Society EASIG Seminar and Cloud Expo Asia. It&amp;rsquo;s about how, at PayMe, we started by creating an API product but realized our goal should have been to build an ecosystem instead.
+ What is PayMe Wikipedia makes a decent job of explaining it: https://en.wikipedia.org/wiki/PayMe, although it&amp;rsquo;s a bit light on the products that are most relevant to this post: API and POS.</description>
+    </item>
     
     <item>
       <title>Book review: The Innovator&#39;s Dilemma</title>
