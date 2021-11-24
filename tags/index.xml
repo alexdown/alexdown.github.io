@@ -21,20 +21,20 @@
     </item>
     
     <item>
-      <title>Cloud</title>
-      <link>/tags/cloud/</link>
-      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/cloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>architecture</title>
       <link>/tags/architecture/</link>
       <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud</title>
+      <link>/tags/cloud/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cloud/</guid>
       <description></description>
     </item>
     
@@ -93,6 +93,15 @@
     </item>
     
     <item>
+      <title>Mobile</title>
+      <link>/tags/mobile/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>UI</title>
       <link>/tags/ui/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
@@ -107,15 +116,6 @@
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/app/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mobile</title>
-      <link>/tags/mobile/</link>
-      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/mobile/</guid>
       <description></description>
     </item>
     
@@ -219,7 +219,7 @@
     </item>
     
     <item>
-      <title>Azure</title>
+      <title>azure</title>
       <link>/tags/azure/</link>
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
       
