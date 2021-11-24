@@ -26,6 +26,12 @@
   </url>
   
   <url>
+    <loc>/tags/cloud/</loc>
+    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
     <lastmod>2020-09-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -33,12 +39,6 @@
   
   <url>
     <loc>/tags/architecture/</loc>
-    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/cloud/</loc>
     <lastmod>2020-09-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -90,12 +90,6 @@
   </url>
   
   <url>
-    <loc>/tags/mobile/</loc>
-    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/ui/</loc>
     <lastmod>2020-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -103,6 +97,12 @@
   
   <url>
     <loc>/tags/app/</loc>
+    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/mobile/</loc>
     <lastmod>2020-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -195,14 +195,14 @@
   </url>
   
   <url>
-    <loc>/2019/07/howwebuiltid/</loc>
-    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/azure/</loc>
     <lastmod>2019-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2019/07/howwebuiltid/</loc>
+    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
